@@ -1,6 +1,3 @@
-/*? no js js needed from me */
-
-// Script untuk redirect ke Google saat Enter di input pencarian
 document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.querySelector(".search-input input");
 
@@ -8,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (event.key === "Enter") {
       const query = searchInput.value.trim();
       if (query !== "") {
-        // Redirect ke Google search
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
       }
     }
