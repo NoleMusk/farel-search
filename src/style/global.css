@@ -29,6 +29,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 header {
@@ -169,7 +170,7 @@ main {
     width: 100%;
   }
   .search-input input {
-    padding: 5px;
+    padding: 8px;
   }
   .language div {
     font-size: 12px;
