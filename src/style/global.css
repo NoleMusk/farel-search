@@ -42,12 +42,33 @@ header {
 
 .header-right {
   display: flex;
-  padding: 10px 20px;
+  align-items: center;
+  padding: 10px 10px;
 }
 
 .header-right a {
   margin-right: 10px;
   color: var(--color-black-primary);
+}
+
+.header-right .login-btn {
+  background-color: #4285f4;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.header-right .login-btn:hover {
+  background-color: #3367d6;
 }
 
 .header-right a:hover {
@@ -102,17 +123,19 @@ main {
   width: 100%;
   padding: 10px;
   font-size: 18px;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
   border: none;
   outline: none;
 }
 
 .search-input .cari {
   cursor: pointer;
+  color: var(--color-black-primary);
 }
 
 .search-input .photo {
   cursor: pointer;
+  color: var(--color-black-primary);
 }
 
 .search-action {
@@ -169,7 +192,8 @@ main {
     width: 100%;
   }
   .search-input input {
-    padding: 5px;
+    padding: 10px;
+    font-size: 14px;
   }
   .language div {
     font-size: 12px;
